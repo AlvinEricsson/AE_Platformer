@@ -11,7 +11,7 @@ public class Victory : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-
+        //När spelaren kolliderar med objektet så ska det printas "Vicory Royale" och man ska ladda scenen som man skrivit in i Unity.
         if(collision.tag == "Player")
         {
             print("Vitory Royale!");

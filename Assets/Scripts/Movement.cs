@@ -21,7 +21,7 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //velocity är en Vector2. Jag gör en new Vector2. Gör så att horizontal hastigheten är gångrad med movespeed variabeln. 
+        //velocity är en Vector2. Jag gör en new Vector2. Gör så att horizontal hastigheten är gångrad med movespeed variabeln. Man styr alltså med Horizontal knapparna som redan finns i spelet. A, D, LeftArrow, RightArrow.
         rbody.velocity = new Vector2
         (Input.GetAxisRaw("Horizontal") * moveSpeed,
             rbody.velocity.y);
