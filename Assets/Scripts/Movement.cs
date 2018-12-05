@@ -7,6 +7,10 @@ public class Movement : MonoBehaviour
     [Range(0, 20f)] //variablar som kan ha ett värde mellan 0 till 20. man får alltså en slide setting i unity.
     public float moveSpeed;
     public float jumpHeight;
+    public float superJump = 35;
+    public Animator anim;
+    
+    
 
     public GroundCheck groundCheck; //referens till GroundCheck
     private Rigidbody2D rbody; //referens till Rigidbody2D. private kan inte ses i unity och kan inte påverkas av andra scripts.
@@ -16,6 +20,10 @@ public class Movement : MonoBehaviour
     {
         //Hittar en component som heter Rigidbody2D. gör så att rbody refererar till Rigidbody2D
         rbody = GetComponent<Rigidbody2D>();
+        //Hämtar component Animator.
+        anim = GetComponent<Animator>();
+        
+        
     }
 
     // Update is called once per frame
@@ -33,10 +41,28 @@ public class Movement : MonoBehaviour
             //gör samma sak här som i horizantal movespeed, fast jag använder min jumpHeight variabel i y led så att den rör sig i y led.
             rbody.velocity = new Vector2(rbody.velocity.x, jumpHeight);
         }
-        
+        //När man trycker på X så kommer Animationen "Roll" starta.
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            anim.SetTrigger("Roll");
+            
+        }
 
-        
-       
-       
     }
+
+   
+
+
+
+
+    //När Spelaren kolliderar med detta objektet med taggen SuperJump så kommer den åka upp i y-led med variabeln superJump
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "SuperJump")
+        {
+            rbody.velocity = new Vector2(rbody.velocity.x, superJump);
+        }
+    }
+
+    
 }
