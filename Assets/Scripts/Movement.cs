@@ -11,6 +11,7 @@ public class Movement : MonoBehaviour
     public Animator anim;
     
     
+    
 
     public GroundCheck groundCheck; //referens till GroundCheck
     private Rigidbody2D rbody; //referens till Rigidbody2D. private kan inte ses i unity och kan inte påverkas av andra scripts.
@@ -41,7 +42,7 @@ public class Movement : MonoBehaviour
             //gör samma sak här som i horizantal movespeed, fast jag använder min jumpHeight variabel i y led så att den rör sig i y led.
             rbody.velocity = new Vector2(rbody.velocity.x, jumpHeight);
         }
-        //När man trycker på X så kommer Animationen "Roll" starta.
+        //När man trycker på X så kommer Animationen "Roll" starta. Notera, denna komponenten gör skillnad på spelet. När man gör roll animationen så kan man rulla över ett block utan att hoppa. Detta är en genomtänkt mechanic som man senare kan ha hinder som kräver att man rullar istället för att hoppa.
         if (Input.GetKeyDown(KeyCode.X))
         {
             anim.SetTrigger("Roll");

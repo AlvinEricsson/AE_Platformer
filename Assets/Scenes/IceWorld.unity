@@ -1174,11 +1174,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4963902271547536, guid: a517dd2ccb23ebe4b9361b9ea060b9ea, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -17.79
+      value: -16.51
       objectReference: {fileID: 0}
     - target: {fileID: 4963902271547536, guid: a517dd2ccb23ebe4b9361b9ea060b9ea, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.74
+      value: -1.67
       objectReference: {fileID: 0}
     - target: {fileID: 4963902271547536, guid: a517dd2ccb23ebe4b9361b9ea060b9ea, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1203,6 +1203,36 @@ Prefab:
     - target: {fileID: 4963902271547536, guid: a517dd2ccb23ebe4b9361b9ea060b9ea, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 61771053421701286, guid: a517dd2ccb23ebe4b9361b9ea060b9ea,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: -0.025590658
+      objectReference: {fileID: 0}
+    - target: {fileID: 61771053421701286, guid: a517dd2ccb23ebe4b9361b9ea060b9ea,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 0.74135923
+      objectReference: {fileID: 0}
+    - target: {fileID: 61771053421701286, guid: a517dd2ccb23ebe4b9361b9ea060b9ea,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: -0.6168946
+      objectReference: {fileID: 0}
+    - target: {fileID: 61771053421701286, guid: a517dd2ccb23ebe4b9361b9ea060b9ea,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 0.023167372
+      objectReference: {fileID: 0}
+    - target: {fileID: 61859403128491786, guid: a517dd2ccb23ebe4b9361b9ea060b9ea,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: -0.61611104
+      objectReference: {fileID: 0}
+    - target: {fileID: 61859403128491786, guid: a517dd2ccb23ebe4b9361b9ea060b9ea,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 0.025237083
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a517dd2ccb23ebe4b9361b9ea060b9ea, type: 2}
